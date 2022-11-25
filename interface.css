@@ -21,7 +21,7 @@ div.item {
     /* To horizontally center images and caption */
     text-align: center;
     /* The width of the container also implies margin around the images. */
-    width: 31vw;
+    width: 21vw;
     padding-left: 2%;
     padding-right: 2%;
     position: relative;
@@ -36,7 +36,7 @@ div.item {
 .caption {
     /* Make the caption a block so it occupies its own line. */
     display: block;
-    font-size: 3.5vw;
+    font-size: 2.5vw;
     font-family: isaiahFont;
 }
 

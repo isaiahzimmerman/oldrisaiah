@@ -17,7 +17,7 @@ var siteList = [
 ]
 
 bodyHTML = ""
-sitesPerRow = 3;
+sitesPerRow = 4;
 
 function loadSite(){
     siteList.forEach(function(currentValue, index){
@@ -31,18 +31,11 @@ function loadSite(){
                 <img src="`+currentValue.icon+`"/>
                 <span class="caption">`+currentValue.title+`</span>
             </a>`
-        for(i=0; i<currentValue.author.length; i++){
-            bodyHTML += `<a href="`+currentValue.author[i]+`">
-                <div class="image-cropper" style="right: `+4.5*i+`vw">
-                    <img src="/assets/`+currentValue.author[i]+`.jpg" class="rounded" />
-                </div>
-            </a>`
-
-        }
+        
             
         bodyHTML += `</div>`
 
-        if(index%sitesPerRow==2){
+        if(index%sitesPerRow==sitesPerRow-1){
             bodyHTML+=`</div>`
         }
     })
